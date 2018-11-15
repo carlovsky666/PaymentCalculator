@@ -25,6 +25,7 @@ namespace PaymentCalculator.Presentation
             List<string> workData = new List<string>();
             PaymentModel payment;
             string filePath = @".\" + formatedData.ToString();
+            string message = "The amount to pay {0} is: {1} USD";
 
             try
             {
@@ -35,7 +36,7 @@ namespace PaymentCalculator.Presentation
                     try
                     {
                         payment = _getPaymentForEmployeeQuery.Execute(line);
-                        Console.WriteLine("The amount to pay " + payment.Name + " is: " + payment.Payment + " USD");
+                        Console.WriteLine(message,payment.Name,payment.Payment);
                     }
                     catch(Exception ex)
                     {
