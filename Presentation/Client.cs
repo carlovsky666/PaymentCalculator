@@ -32,8 +32,16 @@ namespace PaymentCalculator.Presentation
 
                 foreach (string line in workData)
                 {
-                    payment = _getPaymentForEmployeeQuery.Execute(line);
-                    Console.WriteLine("The amount to pay " + payment.Name + " is: " + payment.Payment + " USD");
+                    try
+                    {
+                        payment = _getPaymentForEmployeeQuery.Execute(line);
+                        Console.WriteLine("The amount to pay " + payment.Name + " is: " + payment.Payment + " USD");
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                    
                 }
             }
             catch (Exception ex)
