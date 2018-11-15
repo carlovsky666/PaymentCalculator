@@ -3,7 +3,7 @@ The PaymentCalculator is a three layers aplication. From top to bottom:
 
 Presentation Layer.- Composed by the clases that allow us to enter the data for processing, and after display the results.
 
-Aplication Layer.- Composed by the clases that implements use cases logic and implements it at a higher level than the domain level.
+Application Layer.- Composed by the clases that implements use cases logic and implements it at a higher level than the domain level.
 
 Domain Layer.- Composed by the clases that model the domain with the inherent logic associated to this clases.
 
