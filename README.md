@@ -7,7 +7,7 @@ Application Layer.- Composed by the clases that implements use cases logic and i
 
 Domain Layer.- Composed by the clases that model the domain with the inherent logic associated to this clases.
 
-The complete solution implements patterns to adapt to high cohesion and low coupling, applying SOLID principles.
+The complete solution implements patterns to favor high cohesion and low coupling, applying SOLID principles.
 
 The solution was developed using TDD techniques, and the test classes are in the same location of each class.
 
