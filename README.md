@@ -9,7 +9,7 @@ Domain Layer.- Composed by the clases that model the domain with the inherent lo
 
 The complete solution implements patterns to adapt to high cohesion and low coupling, trying to apply SOLID patterns whenever possible.
 
-The solution was developed using TDD techniques.
+The solution was developed using TDD techniques, and the test classes are in the same location of each class.
 
 The entry point is the Main method of the Program class.
 
